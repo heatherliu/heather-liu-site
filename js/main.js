@@ -94,34 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ---------- Contact Form ----------
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-
-            // Show a nice confirmation (placeholder - replace with actual form handler)
-            const btn = contactForm.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-            btn.textContent = 'Message Sent!';
-            btn.style.background = 'var(--color-accent)';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.style.background = '';
-                btn.disabled = false;
-                contactForm.reset();
-            }, 3000);
-
-            // Log for development
-            console.log('Form submitted:', data);
-        });
-    }
 
     // ---------- Smooth Scroll for anchor links ----------
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

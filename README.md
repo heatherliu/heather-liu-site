@@ -48,7 +48,7 @@ The form is a placeholder. To make it functional:
 
 ### Updating Content
 - All content is in plain HTML — edit directly in VS Code
-- Email addresses: Search for `hello@heatherliu.com` and replace with your real email
+- Email addresses: Search for `hi@heatherliu.com` and replace with your real email
 - LinkedIn URL: Search for `linkedin.com/in/heatherliu` and update
 
 ### Deploying
